@@ -1,0 +1,9 @@
+ 	@frameshipdeadcounter += 1
+	  if @frameshipdeadcounter == 5
+	    @frameshipdeadcounter = 0
+		@deadframer += 1 unless @fflfblarg == true
+		if @deadframer == @image_array.length - 1
+		  @fflfblarg = true
+		  @dodraw = false
+		end
+	  end
